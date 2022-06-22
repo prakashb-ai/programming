@@ -1,5 +1,6 @@
 #include <stdio.h>
 int k=0;
+
 void printarray(int arr[],int n){
     for(int i=0;i<n;i++){
         printf("%d",arr[i]);
@@ -11,10 +12,10 @@ void sort(int arr[],int n){
     int indexmin;
 
     for(int i=0;i<n-1;i++){
-        indexmin = i;
-        for(int j= i+1;j<n;j++){
+        indexmin =i;
+        for(int j=i+1;j<n;j++){
             if(arr[j]<arr[indexmin]){
-                indexmin= j;
+                indexmin = j;
             }
         }
         temp = arr[i];
@@ -23,36 +24,34 @@ void sort(int arr[],int n){
     }
 }
 
-void coinexc(int d[],int m,int n){
-    int s[100];
-    sort(d,m);
-
+void coin(int D[],int m,int n){
+    int S[100];
+    sort(D,m);
     for(int i=m-1;i>=0;i--){
-        while(n>=d[i]){
-            s[k] = d[i];
+        while(n>=D[i]){
+            S[k] = D[i];
             k++;
-            n = n-d[i];
+            n = n-D[i];
         }
-        if(n==0){
+        if(n == 0){
             break;
         }
     }
-    printarray(s,k);
-}
+            printarray(S,k);
 
+}
 int main(){
     int m,n;
-    printf("enter the number of coin denominations \n");
+    printf("enter the number of denominations\n");
     scanf("%d",&m);
-    int d[m];
-    printf("enter the denominations\n");
+   int D[m];
+    printf("enter the denominations \n");
     for(int i=0;i<m;i++){
-        scanf("%d",&d[i]);
+        scanf("%d",&D[i]);
     }
-    printf("enter the value \n");
+    printf("enter the value\n");
     scanf("%d",&n);
     printf("the coins required are:\n");
-    coinexc(d,m,n);
-
+    coin(D,m,n);
     return 0;
 }
