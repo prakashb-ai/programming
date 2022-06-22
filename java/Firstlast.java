@@ -16,3 +16,4 @@ public class Firstlast{
         System.out.println("first character is ::"+fch+"last character::"+lch);
     }
 }
+
