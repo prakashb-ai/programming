@@ -3,10 +3,9 @@ int Sum(int a[],int n){
 	int sum=0;
 	int i,j;
 	for(i=0;i<n;i++){
-		for(j=i+1;j<n;j++){
-            sum = a[i]+a[j];
+            sum = sum+a[i];
 
-		}
+		
 	}
                     	printf("total sum is:-%d",sum);
 

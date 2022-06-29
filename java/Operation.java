@@ -45,10 +45,10 @@ class MyNumber implements Intoperation{
         }
         public void isodd(int num){
             if(num/2!=0){
-                System.out.println("it is a prime number");
+                System.out.println("it is a odd number");
             }
             else {
-                System.out.println("it is not a prime number");
+                System.out.println("it is not a odd number");
             }
 
         }
