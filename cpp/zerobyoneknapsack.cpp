@@ -1,3 +1,9 @@
+
+//write a program that finds an optimal solution 
+//to the fillowing 0/1 knapsack instance capacity of
+//knapsack is m we have n objects with their
+//respective weight a set w profits a set p .fill the knapsack the maxmizes the total profit
+
 #include <stdio.h>
 int max(int a,int b){
     if(a>b)

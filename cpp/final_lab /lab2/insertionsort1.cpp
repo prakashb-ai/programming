@@ -1,20 +1,19 @@
 #include <stdio.h>
-int count = 0;
+int count=0;
 
 void insertionSort(int array[],int size,int k){
-    for(int step = 1;step<size;step++){
-        if(k==step){
-            printf("array unsorted till %d pass \n",k);
+    for(int step=1;step<size;step++){
+        if(k == step){
+            printf("array unsorted till %d pass\n",k);
         }
         int key = array[step];
-        int j = step-1;
-        while(key < array[j] && j>= 0){
+        int j= step-1;
+        while(key <array[j] && j>=0){
             array[j+1] = array[j];
             --j;
-           count ++;
-
+            count++;
         }
-        array[j+1] = key;
+        array[j+1]= key;
     }
 }
 

@@ -1,3 +1,6 @@
+
+//write a function to print the solution sequences considering the program of task-1
+
 #include <stdio.h>
 
 int max(int a,int b)
