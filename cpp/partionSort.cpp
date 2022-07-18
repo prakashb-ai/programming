@@ -42,8 +42,7 @@ int main(){
         scanf(" %d",&a[i]);
     }
 
-    printArr(a,n);
-    printf("after sorting:-");
+    printf(" sorting:-");
     quicksort(a,0,n-1);
     printArr(a,n);
 }
