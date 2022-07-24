@@ -19,7 +19,7 @@ public class Odeven{
                  notify();
 
             }
-        }printOddnumber
+        }
     }
      public void printEvenNumber(){
           synchronized(this)
