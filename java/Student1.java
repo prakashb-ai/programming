@@ -11,7 +11,7 @@ class Student1{
     public void printData(){
         Scanner sc = new Scanner(System.in);
           System.out.println("enter the   student name");
-    name = sc.nextLine();
+       name = sc.nextLine();
 
         System.out.println("student name ="+name);
        System.out.println("enter the   student city");
