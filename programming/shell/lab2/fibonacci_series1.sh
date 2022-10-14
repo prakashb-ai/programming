@@ -3,12 +3,12 @@ echo "enter the value of n"
 read n
 a=0
 b=1
-count=2 
-echo "fibonacci series"
+count=2
+echo "fibonacci series "
 echo $a
 echo $b
 while [ $count -le $n ]
-do 
+do
 fib=`expr $a + $b`
 a=$b
 b=$fib
