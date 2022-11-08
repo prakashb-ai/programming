@@ -1,1 +1,0 @@
-print("hello prakash welcome to  software company")
