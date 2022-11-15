@@ -6,10 +6,10 @@ For example: If the content of the file is:
 
 
 def count_words():
-    file=open("notes.txt","r")
+    file=open("note.txt","r")
     count=0
     data=file.read()
-    words=file.split()
+    words=data.split()
     for word in words:
         if word == 'The' and word =='the':
             count+=1

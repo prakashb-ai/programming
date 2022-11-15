@@ -2,8 +2,6 @@
 "these" present in a text file "article.txt". [Note that the words "this" and "these" are complete words]"""
 
 def count_words():
-    file=open("article.txt","w")
-    file.write("this and these")
     file=open("article.txt","r")
     count=0
     data=file.read()
